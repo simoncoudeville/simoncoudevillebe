@@ -40,6 +40,15 @@ $grid-gutter    : $columns-gutter !default;
         float: left;
         width: 100%;
 
+        .o-grid--flex & {
+
+            .flexbox & {
+                width: auto;
+                float: none;
+            }
+
+        }
+
         .o-grid--gutter > & {
             @include padding-lr($grid-gutter,$grid-gutter);
         }
