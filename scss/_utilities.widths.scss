@@ -13,7 +13,14 @@
         @for $numerator from 1 through $denominator {
             // Build a class in the format `.u-4-of-6`
             .u-#{$numerator}-of-#{$denominator} {
-                width: ($numerator / $denominator) * 100% !important;
+
+                @if $flexbox {
+                    flex-basis: ($numerator / $denominator) * 100% !important;
+                    //max-width: ($numerator / $denominator) * 100% !important;
+                } @else {
+                    width: ($numerator / $denominator) * 100% !important;
+                }
+
             }
         }
     }
@@ -31,7 +38,14 @@
                 @for $numerator from 1 through $denominator {
                     // Build a class in the format `.u-4-of-6`
                     .u-#{$numerator}-of-#{$denominator}-#{$breakpoint} {
-                        width: ($numerator / $denominator) * 100% !important;
+
+                        @if $flexbox {
+                            flex-basis: ($numerator / $denominator) * 100% !important;
+                            //max-width: ($numerator / $denominator) * 100% !important;
+                        } @else {
+                            width: ($numerator / $denominator) * 100% !important;
+                        }
+
                     }
                 }
             }

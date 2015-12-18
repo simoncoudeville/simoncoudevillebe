@@ -5,28 +5,37 @@
 */
 
 .c-nav-main {
-    width: 100%;
-    float: left;
     display: none;
     font-family: $alpha-font-family;
 
     @include mq(bp3) {
         display: block;
-        width: auto;
-        float: right;
     }
 
     &.is-visible {
         display: block;
     }
+
+    .c-header & {
+
+        @if $flexbox == false {
+
+            @include mq(bp3) {
+                float: right;
+            }
+
+        }
+
+    }
+
 }
 
     .c-nav-main__list {
         border-top: 1px dotted palette(color-neutral,light);
+        margin-bottom: 0;
 
         @include mq(bp3) {
             border-top: 0;
-            margin-bottom: 0;
         }
     }
 

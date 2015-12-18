@@ -25,7 +25,14 @@ $grid-gutter    : $columns-gutter !default;
 // No gutters
 
 .o-grid {
-    @include clearfix;
+
+    @if $flexbox {
+        //display: flex;
+        //flex-wrap: wrap;
+    } @else {
+        @include clearfix;
+    }
+
 }
 
 // Default gutter
@@ -33,20 +40,17 @@ $grid-gutter    : $columns-gutter !default;
 .o-grid--gutter {
     @include margin-lr(-($grid-gutter),-($grid-gutter));
 }
-
     // Grid item, takes the full width by default
 
     .o-grid__item {
-        float: left;
-        width: 100%;
 
-        .o-grid--flex & {
+        @if $flexbox {
+            flex-basis: 100%;
+        }
 
-            .flexbox & {
-                width: auto;
-                float: none;
-            }
-
+        @if $flexbox == false {
+            float: left;
+            width: 100%;
         }
 
         .o-grid--gutter > & {
