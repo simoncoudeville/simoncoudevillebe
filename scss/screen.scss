@@ -40,11 +40,14 @@
 
 /* Objects */
 @import 'objects.grid';
-@import 'objects.flexbox';
 @import 'objects.media';
 @import 'objects.media-embed';
 @import 'objects.list';
 @import 'objects.tables';
+
+@if $flexbox {
+    @import 'objects.flexbox';
+}
 
 /* Components */
 @import 'components.navigation';
@@ -70,6 +73,8 @@
 @import 'utilities.pull';
 @import 'utilities.order';
 @import 'utilities.spacing';
+@import 'utilities.align';
+@import 'utilities.flex';
 @import 'utilities.colors';
 @import 'utilities.layers';
 @import 'utilities.states';
