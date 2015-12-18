@@ -5,6 +5,7 @@
 */
 
 .c-card {
+    width: 100%;
     @include padding-tb(1,1);
     @include padding-lr(1,1);
     @include margin-bottom(1);
