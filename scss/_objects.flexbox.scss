@@ -8,18 +8,42 @@
 
 .o-flex {
     display: flex;
+}
+
+// Media query dependant flexbox containers
+
+.o-flex-bp2 {
+
+    @include mq(bp2) {
+        display: flex;
+    }
+
+}
+
+.o-flex-bp3 {
+
+    @include mq(bp3) {
+        display: flex;
+    }
+
+}
+
+.o-flex-bp4 {
+
+    @include mq(bp4) {
+        display: flex;
+    }
+
+}
+
+// default flex is set to no-wrap
+
+.o-flex--wrap {
     flex-wrap: wrap;
 }
 
-.o-flex--nowrap {
-    flex-wrap: nowrap;
-}
-
 // Orientation
-
-.o-flex--horizontal {
-    flex-direction: row;
-}
+// default = row
 
 .o-flex--horizontal-rev {
     flex-direction: row-reverse;
@@ -60,7 +84,7 @@
 }
 
 .o-flex--align-baseline {
-    align-items: stretch;
+    align-items: baseline;
 }
 
 // Justify
@@ -85,24 +109,16 @@
     justify-content: space-between;
 }
 
-    // Children
+// Children
 
-    .o-flex__item {
-        display: flex;
-        flex-direction: column; // Fill out child elements
+.o-flex--grow-1 {
+    flex-grow: 1;
+}
 
-        .o-flex--gutter > & {
-            @include padding-lr($grid-gutter,$grid-gutter);
-        }
+.o-flex--shrink-1 {
+    flex-shrink: 1;
+}
 
-        .o-flex--grow-items > & {
-            flex-grow: 1;
-        }
-
-    }
-
-    // Equal height columns
-
-    .o-flex__column {
-        flex: 1 0 auto;
-    }
+.o-flex--shrink-2 {
+    flex-shrink: 2;
+}
