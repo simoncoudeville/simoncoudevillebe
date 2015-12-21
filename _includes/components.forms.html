@@ -38,7 +38,7 @@
 
     <fieldset>
         <p>
-            <div class="o-grid o-grid--gutter">
+            <div class="o-grid o-grid--gutter o-flex o-flex--wrap">
                 <div class="o-grid__item u-1-of-2-bp3">
                     <label class="c-label">Name<abbr title="Required field">*</abbr></label>
                     <input type="text" class="c-input-text c-input-text--md" placeholder="Full Name" />
@@ -51,7 +51,7 @@
         </p>
 
         <p>
-            <div class="o-grid o-grid--gutter">
+            <div class="o-grid o-grid--gutter o-flex o-flex--wrap">
                 <div class="o-grid__item u-3-of-5-bp4">
                     <label class="c-label">Street<abbr title="Required field">*</abbr></label>
                     <input type="text" class="c-input-text c-input-text--md" placeholder="Street" />
@@ -64,7 +64,7 @@
         </p>
 
         <p>
-            <div class="o-grid o-grid--gutter">
+            <div class="o-grid o-grid--gutter o-flex o-flex--wrap">
                 <div class="o-grid__item u-2-of-5-bp4">
                     <label class="c-label">Zip code<abbr title="Required field">*</abbr></label>
                     <input type="text" class="c-input-text c-input-text--md" placeholder="Zip code" />
@@ -78,7 +78,7 @@
         </p>
 
         <p>
-            <div class="o-grid o-grid--gutter">
+            <div class="o-grid o-grid--gutter o-flex o-flex--wrap">
                 <div class="o-grid__item">
                     <label class="c-label">Message<abbr title="Required field">*</abbr></label>
                     <textarea class="c-input-text c-input-text--md" rows="5" cols="30"></textarea>
@@ -87,7 +87,7 @@
         </p>
 
         <p>
-            <div class="o-grid o-grid--gutter">
+            <div class="o-grid o-grid--gutter o-flex o-flex--wrap">
                 <div class="o-grid__item c-button-group">
                     <input type="submit" class="c-button c-button--float-left c-button--md c-button--alpha" value="Volgende" />
                     <a href="#" class="c-button c-button--float-left c-button--md c-button--beta">Vorige</a>
@@ -103,7 +103,7 @@
     <h3>Example 3: Form with pre- en postfixes</h3>
 
     <fieldset>
-        <div class="o-grid">
+        <div class="o-grid o-flex">
             <div class="o-grid__item u-5-of-6">
                 <input class="c-input-text c-input-text--sm c-input-text--prefix" type="email" placeholder="email@address.com" />
             </div>
@@ -114,7 +114,7 @@
     </fieldset>
 
     <fieldset>
-        <div class="o-grid">
+        <div class="o-grid o-flex">
             <div class="o-grid__item u-5-of-6">
                 <input type="email" class="c-input-text c-input-text--md c-input-text--prefix has-error" placeholder="email@address.com" />
                 <span class="c-alert-inline c-alert-inline--error">This field is required.</span>
@@ -126,13 +126,22 @@
     </fieldset>
 
     <fieldset>
-        <div class="o-grid">
+        <div class="o-grid o-flex">
             <div class="o-grid__item u-5-of-6">
                 <input class="c-input-text c-input-text--lg c-input-text--prefix" type="email" placeholder="email@address.com" />
             </div>
             <div class="o-grid__item u-1-of-6">
                 <button class="c-button c-button--lg c-button--beta c-button--postfix" type="submit" class="c-button">Send</button>
             </div>
+        </div>
+    </fieldset>
+    <p>
+        With flexbox
+    </p>
+    <fieldset>
+        <div class="o-flex">
+            <input class="c-input-text c-input-text--lg c-input-text--prefix" type="email" placeholder="email@address.com" />
+            <button class="c-button c-button--lg c-button--beta c-button--postfix" type="submit" class="c-button">Send</button>
         </div>
     </fieldset>
 </form>
