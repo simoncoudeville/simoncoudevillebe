@@ -10,6 +10,7 @@
 
     @include mq(bp3) {
         display: block;
+        @include margin-right($columns-gutter * -1);
     }
 
     &.is-visible {
@@ -19,23 +20,24 @@
     .c-header & {
 
         @if $flexbox == false {
-
             @include mq(bp3) {
                 float: right;
             }
-
         }
-
     }
-
 }
 
     .c-nav-main__list {
-        border-top: 1px dotted palette(color-neutral,light);
+        border: 1px dotted palette(color-neutral,light);
+        border-width: 1px 0;
         margin-bottom: 0;
 
         @include mq(bp3) {
-            border-top: 0;
+            border: 0;
+
+            @if $flexbox {
+                display: flex;
+            }
         }
     }
 
@@ -45,11 +47,12 @@
         }
 
         @include mq(bp3) {
-            float: left;
+            @if $flexbox == false {
+                float: left;
+            }
 
             & + & {
                 border-top: 0;
-                @include margin-lr(2,0);
             }
         }
     }
@@ -59,10 +62,20 @@
         color: palette(color-alpha);
         text-decoration: none;
         font-weight: $beta-font-weight;
-        @include text-dimensions($alpha-font-size,1,0,.25,.25);
+        @include padding-lr($columns-gutter, $columns-gutter);
+        @include text-dimensions($alpha-font-size,1,0,1,1);
+
+        @include mq(bp1) {
+            @include padding-lr($columns-gutter * 2, $columns-gutter * 2);
+        }
 
         @include mq(bp3) {
             @include padding-tb(1.25,1.25);
+            @include padding-lr($columns-gutter, $columns-gutter);
+        }
+
+        @include mq(bp4) {
+            @include padding-lr($columns-gutter, $columns-gutter);
         }
 
         &:hover,
@@ -73,19 +86,24 @@
 
 .c-nav-main-trigger {
     user-select: none;
-    position: absolute;
-    top: 2em;
-    right: 1em;
     display: block;
     color: palette(color-alpha);
     background-color: palette(color-neutral,x-light);
-    border: 1px solid palette(color-alpha);
     outline: 0;
     border-radius: $radius;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include padding-lr($columns-gutter,$columns-gutter);
+    @include text-dimensions($alpha-font-size,1,0,1.25,1.25);
 
     &.is-active {
-        color: palette(color-neutral,x-light);
-        background-color: palette(color-alpha);
+        color: palette(color-neutral);
+    }
+
+    @include mq(bp1) {
+        @include padding-lr($columns-gutter * 2, $columns-gutter * 2);
     }
 
     @include mq(bp3) {

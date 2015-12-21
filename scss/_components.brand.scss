@@ -21,17 +21,22 @@
     @include text-dimensions($alpha-font-size,1,0,1.25,1.25);
 
     .c-header & {
+        @include margin-left($columns-gutter);
+
+        @include mq(bp1) {
+            @include margin-left($columns-gutter * 2);
+        }
+
+        @include mq(bp3) {
+            margin-left: 0;
+        }
 
         @if $flexbox == false {
-
             @include mq(bp3) {
                 float: left;
             }
-
         }
-
     }
-
 }
 
     .c-logo__link {

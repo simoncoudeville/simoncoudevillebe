@@ -4,11 +4,25 @@
     Styleguide specific scaffolding and demo styles
 */
 
+.c-section {
+
+    & + & {
+        border-top: 1px solid palette(color-neutral,light);
+        @include margin-top(1);
+        @include padding-top(2);
+    }
+
+}
+
+.c-section__intro {
+    @include clearfix;
+    @include margin-bottom(1);
+}
+
 .c-section-title {
     color: palette(color-neutral);
-    border-bottom: 1px solid palette(color-neutral);
-    @include padding-bottom(1);
-    @include padding-top(1);
+    border-bottom: 1px solid palette(color-neutral,light);
+    @include padding-bottom(2);
     @include text-dimensions($alpha-font-size,1,2);
 }
 
@@ -38,10 +52,14 @@
 
 .c-swatch-caption {
     color: palette(color-neutral);
-    min-height: 55px;
-    @include text-dimensions(14,.8,0,.5,.3);
+    @include text-dimensions($ms-1,1);
 }
 
 .c-style-demo {
     background-color: red;
+}
+
+.c-style-flexbox-intro {
+    background-color: palette(color-alpha);
+    height: 80vh;
 }
