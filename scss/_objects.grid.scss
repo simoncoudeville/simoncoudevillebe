@@ -26,10 +26,7 @@ $grid-gutter    : $columns-gutter !default;
 
 .o-grid {
 
-    @if $flexbox {
-        //display: flex;
-        //flex-wrap: wrap;
-    } @else {
+    @if $flexbox == false {
         @include clearfix;
     }
 
@@ -46,9 +43,7 @@ $grid-gutter    : $columns-gutter !default;
 
         @if $flexbox {
             flex-basis: 100%;
-        }
-
-        @if $flexbox == false {
+        } @else {
             float: left;
             width: 100%;
         }
