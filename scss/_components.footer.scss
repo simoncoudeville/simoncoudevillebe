@@ -1,0 +1,14 @@
+/*
+    Components: Footer
+    ---
+    The footer of the website
+*/
+
+.c-footer {
+    //background-color: #fff;
+}
+
+.c-footer__copy {
+    color: palette(color-neutral,dark);
+    @include text-dimensions($ms-3);
+}

@@ -23,23 +23,23 @@ $ms5                        : 31 !default;
 $ms6                        : 37 !default;
 $ms7                        : 42 !default;
 $ms8                        : 50 !default;
-$ms10                       : 56 !default;
-$ms11                       : 67 !default;
-$ms12                       : 75 !default;
-$ms13                       : 89 !default;
-$ms14                       : 100 !default;
+$ms9                        : 56 !default;
+$ms10                       : 67 !default;
+$ms11                       : 75 !default;
+$ms12                       : 89 !default;
+$ms13                       : 100 !default;
 
 // Basic font settings
 
-$alpha-font-family          : sans-serif;
+$alpha-font-family          : "Neutral", sans-serif;
 $beta-font-family           : serif;
 
 $alpha-font-size            : $ms0;
 
 $alpha-font-weight          : 400;
-$beta-font-weight           : 700;
+$beta-font-weight           : 500;
 
-$alpha-line-height          : 1.5;
+$alpha-line-height          : 1.6;
 
 $alpha-leading              : 1;
 $beta-leading               : 2;
@@ -107,6 +107,16 @@ $increments: (
     delta                   : 1.5,
     epsilon                 : 2
 ) !default;
+
+// ---
+// Animations
+// ---
+
+$animation-duration-alpha   : .1s;
+$animation-duration-beta    : .2s;
+$animation-duration-gamma   : .3s;
+$animation-easing-alpha     : ease-in-out;
+$animation-easing-beta      : cubic-bezier(.68, -.55, .265, 1.55); // bouncy
 
 // ---
 // Tools

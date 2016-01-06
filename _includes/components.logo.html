@@ -1,14 +1,12 @@
 {% if page.section != 'home' %}
     <p class="c-logo">
-        <a href="index.html" class="c-logo__link">
 {% else %}
     <h1 class="c-logo">
-{% endif %}
-
-    {{ site.title }}
-
-{% if page.section != 'home' %}
+        {% endif %}
+        <a href="index.html" class="c-logo__link">
+            {{ site.title }}
         </a>
+        {% if page.section != 'home' %}
     </p>
 {% else %}
     </h1>

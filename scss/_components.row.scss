@@ -13,6 +13,32 @@
         @include padding-lr($columns-gutter * 2,$columns-gutter * 2);
     }
 
+    @include mq(bp2) {
+        @include padding-tb($alpha-leading * 3,$alpha-leading * 2);
+        @include padding-lr($columns-gutter * 3,$columns-gutter * 3);
+    }
+
+    @include mq(bp3) {
+        @include padding-tb($alpha-leading * 4,$alpha-leading * 3);
+        @include padding-lr($columns-gutter * 4,$columns-gutter * 4);
+    }
+
+    @include mq(bp4) {
+        @include padding-tb($alpha-leading * 5,$alpha-leading * 4);
+        @include padding-lr($columns-gutter * 5,$columns-gutter * 5);
+    }
+
+    @include mq(bp5) {
+        @include padding-tb($alpha-leading * 6,$alpha-leading * 5);
+        @include padding-lr($columns-gutter * 6,$columns-gutter * 6);
+    }
+
+    & + & {
+        //border-top: 1px solid palette(color-neutral,xx-light);
+        @include padding-top($alpha-leading * 0);
+
+    }
+
 }
 
 .c-row--alpha {

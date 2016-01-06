@@ -25,6 +25,7 @@
 @import 'tools.mixins';
 @import 'tools.spacing';
 @import 'tools.typography';
+@import 'tools.ms';
 
 /* Generic */
 @import 'generic.normalize';
@@ -51,6 +52,7 @@
 
 /* Components */
 @import 'components.header';
+@import 'components.footer';
 @import 'components.navigation';
 @import 'components.brand';
 @import 'components.row';
@@ -74,6 +76,7 @@
 @import 'utilities.pull';
 @import 'utilities.order';
 @import 'utilities.spacing';
+@import 'utilities.ms';
 @import 'utilities.align';
 @import 'utilities.flex';
 @import 'utilities.colors';
