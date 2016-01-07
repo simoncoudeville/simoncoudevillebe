@@ -9,6 +9,6 @@
 }
 
 .c-footer__copy {
-    color: palette(color-neutral,dark);
+    color: palette(color-neutral,light);
     @include text-dimensions($ms-3);
 }

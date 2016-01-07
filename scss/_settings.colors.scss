@@ -9,8 +9,25 @@
     @return map-get(map-get($palettes, $palette), $tone);
 }
 
+// LightSteelBlue
+// Khaki PaleGoldenRod
+// Lavender thistle
+// CornflowerBlue
+// Salmon
+// SkyBlue
+// LightCoral
+// LightGreen
+// LightSalmon
+// PaleTurquoise
+// LightBlue
+//
+// PowderBlue
+
 // Base colors
-$color-alpha                : #0074D9 !default;
+$color-alpha                : #0064ff !default;
+//$color-alpha                : #0EEAFF !default;
+//$color-alpha                : blue !default;
+//$color-alpha                : khaki !default;
 $color-beta                 : #2ECC40 !default;
 
 $color-error                : #FF4136 !default;
@@ -22,7 +39,8 @@ $color-neutral              : hsl(hue($color-alpha),5,50) !default;
 // Palettes
 $palettes: (
     color-neutral: (
-        xxx-light           : hsl(hue($color-neutral),saturation($color-neutral),100),
+        xxxx-light          : hsl(hue($color-neutral),saturation($color-neutral),100),
+        xxx-light           : hsl(hue($color-neutral),saturation($color-neutral),95),
         xx-light            : hsl(hue($color-neutral),saturation($color-neutral),87.5),
         x-light             : hsl(hue($color-neutral),saturation($color-neutral),75),
         light               : hsl(hue($color-neutral),saturation($color-neutral),62.5),

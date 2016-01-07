@@ -17,9 +17,10 @@ $html-responsive-font-size          : true !default;
 $html-responsive-font-breakpoint    : bp1 !default;
 $html-responsive-font-magnification : 112.5% !default;
 
+//$html-background-color              : palette(color-neutral,xxx-light) !default;
 $html-background-color              : palette(color-neutral,xxx-dark) !default;
-$body-background-color              : palette(color-neutral,xxx-light) !default;
-$body-color                         : palette(color-neutral,light) !default;
+$body-background-color              : palette(color-neutral,xxx-dark) !default;
+$body-color                         : palette(color-neutral,xxx-light) !default;
 
 $body-font-smoothing                : true !default;
 
@@ -38,12 +39,26 @@ html {
     display: flex;
     min-height: 100%;
 
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: transparent url(../img/wallpaper-518.gif) 0 0 repeat;
+        //background-size: 600px 607px;
+        opacity: .1;
+    }
+
     @include mq(bp2) {
         font-size: $alpha-font-size/16*112.5%;
     }
 
     @include mq(bp3) {
         font-size: $alpha-font-size/16*125%;
+        //background: $html-background-color url(../img/cornflower.gif) bottom right no-repeat;
+
     }
 
     @include mq(bp4) {
@@ -66,7 +81,8 @@ body {
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    //justify-content: center;
+    justify-content: space-between;
 
     @if $body-font-smoothing == true {
         -webkit-font-smoothing: antialiased;
