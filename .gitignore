@@ -3,6 +3,7 @@
 # _site/
 /css/
 /vendor/
+/CNAME
 commandos
 bower_components/
 node_modules/
