@@ -18,7 +18,7 @@ $html-responsive-font-breakpoint    : bp1 !default;
 $html-responsive-font-magnification : 112.5% !default;
 
 //$html-background-color              : palette(color-neutral,xxx-light) !default;
-$html-background-color              : palette(color-neutral,xxx-dark) !default;
+$html-background-color              : palette(color-neutral,xxxx-dark) !default;
 $body-background-color              : palette(color-neutral,xxx-dark) !default;
 $body-color                         : palette(color-neutral,xxx-light) !default;
 
@@ -34,22 +34,10 @@ html {
     font: $html-font-weight #{$html-font-size/16*100%}/#{$html-line-height} $html-font-family;
     -webkit-overflow-scrolling: touch;
     background-color: $html-background-color;
-    //background: linear-gradient(to top, palette(color-neutral,xxx-dark), palette(color-neutral,xx-dark));
+    //background: linear-gradient(to left, palette(color-neutral,xxxx-dark), palette(color-neutral,xxx-dark));
     background-attachment: fixed;
     display: flex;
     min-height: 100%;
-
-    &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: transparent url(../img/wallpaper-518.gif) 0 0 repeat;
-        //background-size: 600px 607px;
-        opacity: .1;
-    }
 
     @include mq(bp2) {
         font-size: $alpha-font-size/16*112.5%;
@@ -57,8 +45,6 @@ html {
 
     @include mq(bp3) {
         font-size: $alpha-font-size/16*125%;
-        //background: $html-background-color url(../img/cornflower.gif) bottom right no-repeat;
-
     }
 
     @include mq(bp4) {
@@ -76,21 +62,44 @@ html {
 }
 
 body {
-    //background-color: $body-background-color;
     color: $body-color;
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    //justify-content: center;
     justify-content: space-between;
+    transition: all $animation-duration-beta $animation-easing-alpha;
 
     @if $body-font-smoothing == true {
         -webkit-font-smoothing: antialiased;
     }
 
-    //@include mq(bp4) {
-    //    width: 50%;
+    .wf-loading &{
+        opacity: 0;
+    }
+
+    //.wf-active &,
+    //.wf-inactive & {
+    //    opacity: 1;
     //}
+
+    &:before {
+        content: '';
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        //background: transparent url(../img/wallpaper-51.gif) 0 0 repeat;
+        //background: transparent url(../img/wallpaper-56.gif) 0 0 repeat;
+        //background: transparent url(../img/wallpaper-514.gif) 0 0 repeat;
+        //background: transparent url(../img/wallpaper-515.gif) 0 0 repeat;
+        background: transparent url(../img/wallpaper-516.gif) 0 0 repeat;
+        //background: transparent url(../img/wallpaper-518.gif) 0 0 repeat;
+
+        opacity: .1;
+        min-height: 100%;
+    }
 
 }
 

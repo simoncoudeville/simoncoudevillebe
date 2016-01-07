@@ -70,10 +70,14 @@ $link-transition               : all $animation-duration-alpha $animation-easing
 $link-decoration               : none !default;
 $link-decoration--hover        : none !default;
 
-$link-color                    : palette(color-neutral,xxx-light) !default;
-$link-color--visited           : palette(color-neutral,xxx-light) !default;
-$link-color--hover             : palette(color-neutral,dark) !default;
-$link-color--focus             : palette(color-alpha,dark) !default;
+$link-color                    : palette(color-neutral,xx-light) !default;
+$link-color--visited           : palette(color-neutral,xx-light) !default;
+$link-color--hover             : palette(color-neutral,xxxx-light) !default;
+$link-color--focus             : palette(color-alpha,xxxx-light) !default;
+//$link-color                    : palette(color-alpha) !default;
+//$link-color--visited           : palette(color-alpha) !default;
+//$link-color--hover             : palette(color-alpha,light) !default;
+//$link-color--focus             : palette(color-alpha,xxxx-light) !default;
 
 $link-outline                  : 0 !default;
 $link-outline--focus           : thin dotted !default;
@@ -193,10 +197,9 @@ a {
         position: absolute;
         height: 1px;
         background-color: $link-color;
-        //background-color: red;
         right: 1px;
+        left: 1px;
         bottom: 0;
-        left: 2px;
         opacity: .5;
         //width: 100%;
         transition: $link-transition;
@@ -206,7 +209,7 @@ a {
         color: $link-color--visited;
 
         &:before {
-            //background-color: $link-color--visited;
+            background-color: $link-color--visited;
         }
 
     }
@@ -214,10 +217,10 @@ a {
     &:hover {
         text-decoration: $link-decoration--hover;
         color: $link-color--hover;
-        //color: red;
 
         &:before {
             //width: 0;
+            opacity: 1;
             background-color: $link-color--hover;
         }
     }
