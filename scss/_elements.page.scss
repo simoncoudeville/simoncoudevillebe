@@ -28,6 +28,30 @@ $body-selection-background-color    : palette(color-alpha) !default;
 $body-selection-color               : palette(color-neutral,xxx-light) !default;
 $body-selection-text-shadow         : none !default;
 
+// transition
+
+@keyframes disco {
+     0%,100% {background-color: blue;}
+     25% {background-color: green;}
+     50% {background-color: red;}
+     75% {background-color: white;}
+}
+
+@keyframes background {
+    0%,100% {
+        background-image: url(../img/wallpaper-516.gif);
+    }
+    25% {
+        background-image: url(../img/wallpaper-518.gif);
+    }
+    50% {
+        background-image: url(../img/wallpaper-515.gif);
+    }
+    75% {
+        background-image: url(../img/wallpaper-514.gif);
+    }
+}
+
 // Styles
 
 html {
@@ -89,6 +113,8 @@ body {
         right: 0;
         bottom: 0;
         left: 0;
+        background-repeat: repeat;
+        background-position: 0 0;
 
         //background: transparent url(../img/wallpaper-51.gif) 0 0 repeat;
         //background: transparent url(../img/wallpaper-56.gif) 0 0 repeat;
