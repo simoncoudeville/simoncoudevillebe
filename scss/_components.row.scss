@@ -5,6 +5,7 @@
 */
 
 .c-row {
+    position: relative;
     @include padding-tb($alpha-leading,0);
     @include padding-lr($columns-gutter,$columns-gutter);
 

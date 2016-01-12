@@ -4,11 +4,11 @@
     The footer of the website
 */
 
-.c-footer {
-    //background-color: #fff;
-}
+.c-footer__item {
+    display: block;
 
-.c-footer__copy {
-    color: palette(color-neutral,light);
-    @include text-dimensions($ms-3);
+    @include mq(bp3) {
+        display: inline;
+    }
+
 }
