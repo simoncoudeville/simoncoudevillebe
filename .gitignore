@@ -1,9 +1,8 @@
 .sass-cache
 .DS_Store
-# _site/
-# /css/
+_site/
+/css/
 /vendor/
-/CNAME
 commandos
 bower_components/
 node_modules/
