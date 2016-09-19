@@ -31,14 +31,20 @@ $ms13                       : 100 !default;
 
 // Basic font settings
 
-$alpha-font-family          : "Neutral", sans-serif;
-$alpha-font-family          : "Suisse Mono", sans-serif;
+//$alpha-font-family          : "Suisse Mono", sans-serif;
+//$alpha-font-family          : "Suisse", sans-serif;
+//$alpha-font-family          : "Tiempos Text", sans-serif;
+//$alpha-font-family          : "minion-pro-caption", sans-serif;
+$alpha-font-family          : "jaf-lapture-caption", sans-serif;
+//$alpha-font-family          : "Graphik", sans-serif;
+//$alpha-font-family          : "Lab Grotesque", sans-serif;
+//$alpha-font-family          : -apple-system, BlinkMacSystemFont, sans-serif;
 $beta-font-family           : serif;
 
 $alpha-font-size            : $ms0;
 
 $alpha-font-weight          : 400;
-$beta-font-weight           : 500;
+$beta-font-weight           : 600;
 
 $alpha-line-height          : 1.6;
 
@@ -75,7 +81,8 @@ $breakpoints: (
     bp2                     : 480/16*1em,
     bp3                     : 680/16*1em,
     bp4                     : 960/16*1em,
-    bp5                     : 1140/16*1em
+    bp5                     : 1140/16*1em,
+    bp6                     : 1440/16*1em
 ) !default;
 
 // ---

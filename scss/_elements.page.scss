@@ -9,7 +9,7 @@
 // ---
 
 $html-font-family                   : $alpha-font-family !default;
-$html-font-weight                   : $alpha-font-weight !default;
+$html-font-weight                   : $beta-font-weight !default;
 $html-font-size                     : $alpha-font-size !default;
 $html-line-height                   : $alpha-line-height !default;
 
@@ -19,8 +19,10 @@ $html-responsive-font-magnification : 112.5% !default;
 
 //$html-background-color              : palette(color-neutral,xxx-light) !default;
 $html-background-color              : palette(color-neutral,xxxx-dark) !default;
-$body-background-color              : palette(color-neutral,xxx-dark) !default;
-$body-color                         : palette(color-neutral,xxx-light) !default;
+//$html-background-color              : palette(color-alpha,x-dark) !default;
+$body-background-color              : palette(color-alpha) !default;
+$body-color                         : palette(color-neutral,xxxx-light) !default;
+//$body-color                         : palette(color-alpha,x-dark) !default;
 
 $body-font-smoothing                : true !default;
 
@@ -51,13 +53,13 @@ html {
         font-size: $alpha-font-size/16*137.5%;
     }
 
-    //@include mq(bp5) {
-    //    font-size: $alpha-font-size/16*150%;
-    //}
+    @include mq(bp5) {
+        font-size: $alpha-font-size/16*150%;
+    }
 
-    //@include mq(bp6) {
-    //    font-size: $alpha-font-size/16*162.5%;
-    //}
+    @include mq(bp6) {
+        font-size: $alpha-font-size/16*162.5%;
+    }
 }
 
 body {

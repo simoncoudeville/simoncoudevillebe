@@ -24,7 +24,7 @@
 // PowderBlue
 
 // Base colors
-$color-alpha                : #0064ff !default;
+$color-alpha                : #0033cc !default;
 //$color-alpha                : #0EEAFF !default;
 //$color-alpha                : blue !default;
 //$color-alpha                : khaki !default;
@@ -52,10 +52,11 @@ $palettes: (
         xxxx-dark           : hsl(hue($color-neutral),saturation($color-neutral),5)
     ),
     color-alpha: (
-        light               : hsl(hue($color-alpha),saturation($color-alpha - 50),lightness($color-alpha + 50)),
+        x-light             : hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha + 75)),
+        light               : hsl(hue($color-alpha),saturation($color-alpha),lightness($color-alpha + 50)),
         base                : $color-alpha,
-        dark                : hsl(hue($color-alpha),100,25),
-        x-dark              : hsl(hue($color-alpha),100,15)
+        dark                : hsl(hue($color-alpha),saturation($color-alpha),25),
+        x-dark              : hsl(hue($color-alpha),saturation($color-alpha),15)
     ),
     color-beta: (
         light               : hsl(hue($color-beta),70,60),

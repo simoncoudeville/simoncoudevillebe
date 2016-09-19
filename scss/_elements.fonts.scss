@@ -1,0 +1,12 @@
+/*
+    Elements: Fonts
+    ---
+    Font-face declarations
+*/
+
+@font-face {
+    font-family: 'Suisse Mono';
+    src: url('../fonts/SuisseIntlMono-Regular-WebS.woff2') format('woff2'),
+         url('../fonts/SuisseIntlMono-Regular-WebS.woff') format('woff');
+    font-weight: 400;
+}
