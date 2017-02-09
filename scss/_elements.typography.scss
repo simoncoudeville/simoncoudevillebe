@@ -201,7 +201,7 @@ a {
         left: 1px;
         bottom: 0;
         opacity: .5;
-        //width: 100%;
+        width: 100%;
         transition: $link-transition;
     }
 
@@ -221,6 +221,7 @@ a {
         &:before {
             //width: 0;
             opacity: 1;
+            //height: 100%;
             background-color: $link-color--hover;
         }
     }

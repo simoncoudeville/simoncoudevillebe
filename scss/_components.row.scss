@@ -6,6 +6,7 @@
 
 .c-row {
     position: relative;
+    width: 100%;
     @include padding-tb($alpha-leading,0);
     @include padding-lr($columns-gutter,$columns-gutter);
 
@@ -24,29 +25,42 @@
         @include padding-lr($columns-gutter * 4,$columns-gutter * 4);
     }
 
-    @include mq(bp4) {
-        @include padding-tb($alpha-leading * 5,$alpha-leading * 4);
-        @include padding-lr($columns-gutter * 5,$columns-gutter * 5);
-    }
+    //@include mq(bp4) {
+    //    @include padding-tb($alpha-leading * 5,$alpha-leading * 4);
+    //    @include padding-lr($columns-gutter * 5,$columns-gutter * 5);
+    //}
 
-    @include mq(bp5) {
-        @include padding-tb($alpha-leading * 6,$alpha-leading * 5);
-        @include padding-lr($columns-gutter * 6,$columns-gutter * 6);
-    }
+    //@include mq(bp5) {
+    //    @include padding-tb($alpha-leading * 6,$alpha-leading * 5);
+    //    @include padding-lr($columns-gutter * 6,$columns-gutter * 6);
+    //}
 
     & + & {
         //border-top: 1px solid palette(color-neutral,xx-light);
         @include padding-top($alpha-leading * 0);
+    }
 
+    .c-row {
+        padding-left: 0;
+        padding-right: 0;
     }
 
 }
 
-.c-row--alpha {
-    background-color: palette(color-neutral,x-light);
+.c-row--main {
+    padding-bottom: 0;
 }
 
-.c-row--beta {
-    color: palette(color-neutral,light);
-    background-color: palette(color-neutral,dark);
+.c-row--logo {
+    //@include mq(bp5) {
+    //    position: absolute;
+    //    top: 0;
+    //    right: 0;
+    //}
+    align-items: flex-start;
+}
+
+.c-row--main {
+    //margin-top: auto;
+    align-self: flex-end;
 }

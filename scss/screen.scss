@@ -33,6 +33,7 @@
 @import 'generic.box-sizing';
 
 /* Elements */
+@import 'elements.fonts';
 @import 'elements.page';
 @import 'elements.typography';
 //@import 'elements.images';
@@ -43,7 +44,7 @@
 //@import 'objects.grid';
 //@import 'objects.media';
 //@import 'objects.media-embed';
-//@import 'objects.list';
+@import 'objects.list';
 //@import 'objects.tables';
 
 @if $flexbox {
@@ -54,7 +55,7 @@
 //@import 'components.header';
 @import 'components.footer';
 //@import 'components.navigation';
-//@import 'components.brand';
+@import 'components.brand';
 @import 'components.row';
 //@import 'components.icons';
 //@import 'components.alerts';

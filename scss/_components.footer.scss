@@ -4,16 +4,44 @@
     The footer of the website
 */
 
-.c-footer__item {
-    display: block;
-
-    @include mq(bp3) {
-        display: inline;
-    }
-
+.c-footer {
+    display: flex;
 }
 
-.c-footer__text {
-    font-weight: $alpha-font-weight;
+    .c-footer__item {
+        @include margin-right(1);
+    }
+
+.c-footer-links,
+.c-footer-text {
+    @include text-dimensions(10,.75);
+}
+
+.c-footer-links {
+    display: flex;
+}
+
+    .c-footer-links__item {
+        @include margin-right(1);
+    }
+
+    .c-footer-links__link {
+        &,
+        &:visited {
+            opacity: .5;
+        }
+
+        &:hover,
+        &:focus {
+            opacity: 1;
+        }
+
+        &:before {
+            display: none;
+        }
+    }
+
+.c-footer-text {
+    //font-weight: $alpha-font-weight;
     opacity: .5;
 }

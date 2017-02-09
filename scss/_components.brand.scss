@@ -11,32 +11,48 @@
  */
 
 .c-logo {
-    display: block;
+    display: inline-flex;
+    height: 1rem;
+    width: 1rem;
     //width: 157px; /* [1] */
-    margin-bottom: 0;
+    //margin-bottom: 0;
+    //font-weight: $beta-font-weight;
+    //text-transform: uppercase;
+    //letter-spacing: 0.125em;
+    //@include text-dimensions(8,.75);
     //background-repeat: no-repeat;
     //background-position: center;
     //background-image: url('../img/svg/logo.svg');
     //text-indent: -99999px; /* [2] */
 
-    .c-header & {
-        @include margin-left($columns-gutter);
-
-        @include mq(bp1) {
-            @include margin-left($columns-gutter * 2);
-        }
-
-        @include mq(bp3) {
-            margin-left: 0;
-        }
-
-        @if $flexbox == false {
-            @include mq(bp3) {
-                float: left;
-            }
-        }
-    }
+    //.c-header & {
+    //    @include margin-left($columns-gutter);
+    //
+    //    @include mq(bp1) {
+    //        @include margin-left($columns-gutter * 2);
+    //    }
+    //
+    //    @include mq(bp3) {
+    //        margin-left: 0;
+    //    }
+    //
+    //    @if $flexbox == false {
+    //        @include mq(bp3) {
+    //            float: left;
+    //        }
+    //    }
+    //}
 }
+
+    .c-logo__mark {
+        width: 100%;
+        //width: 1rem;
+        //height: 1rem;
+    }
+
+    .c-logo__path {
+        fill: white;
+    }
 
     .c-logo__link {
         display: block;
