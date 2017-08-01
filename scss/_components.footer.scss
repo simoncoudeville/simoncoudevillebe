@@ -5,7 +5,11 @@
 */
 
 .c-footer {
-    display: flex;
+    font-family: $beta-font-family;
+
+    @include mq(bp3) {
+        display: flex;
+    }
 }
 
     .c-footer__item {
@@ -14,11 +18,21 @@
 
 .c-footer-links,
 .c-footer-text {
-    @include text-dimensions(10,.75);
+    @include text-dimensions($ms-1,.875);
+
+    @include mq(bp3) {
+        @include text-dimensions($ms-2,.75);
+    }
+
+    //@include mq(bp5) {
+    //    @include text-dimensions($ms-3,.75);
+    //}
 }
 
 .c-footer-links {
-    display: flex;
+    @include mq(bp1) {
+        display: flex;
+    }
 }
 
     .c-footer-links__item {

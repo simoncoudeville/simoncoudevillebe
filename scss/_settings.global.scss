@@ -11,7 +11,7 @@
 // manual modular scale font sizes
 // based on http://modularscale.com/scale/?px1=16&px2=18&ra1=1.333&ra2=0
 
-$ms-3                       : 11 !default;
+$ms-3                       : 10 !default;
 $ms-2                       : 12 !default;
 $ms-1                       : 14 !default;
 $ms0                        : 16 !default;
@@ -34,14 +34,15 @@ $ms13                       : 100 !default;
 //$alpha-font-family          : "Suisse Mono", sans-serif;
 //$alpha-font-family          : "Suisse", sans-serif;
 //$alpha-font-family          : "Tiempos Text", sans-serif;
-//$alpha-font-family          : "minion-pro-caption", sans-serif;
+//$alpha-font-family          : "minion-pro-caption", serif;
+$alpha-font-family          : "GT Sectra", serif;
+$beta-font-family           : "GT Walsheim", serif;
 //$alpha-font-family          : "jaf-lapture-caption", sans-serif;
 //$alpha-font-family          : "acumin-pro", sans-serif;
-$alpha-font-family          : "Graphik Web", sans-serif;
+//$alpha-font-family          : "Graphik Web", sans-serif;
 //$alpha-font-family          : "Neutral", sans-serif;
 //$alpha-font-family          : "Lab Grotesque", sans-serif;
 //$alpha-font-family          : -apple-system, BlinkMacSystemFont, sans-serif;
-$beta-font-family           : serif;
 
 $alpha-font-size            : $ms0;
 

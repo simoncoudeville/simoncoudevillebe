@@ -41,7 +41,7 @@ html {
     display: flex;
     min-height: 100%;
 
-    @include mq(bp2) {
+    @include mq(bp1) {
         font-size: $alpha-font-size/16*112.5%;
     }
 
@@ -57,9 +57,9 @@ html {
         font-size: $alpha-font-size/16*150%;
     }
 
-    @include mq(bp6) {
-        font-size: $alpha-font-size/16*162.5%;
-    }
+    //@include mq(bp6) {
+    //    font-size: $alpha-font-size/16*162.5%;
+    //}
 }
 
 body {

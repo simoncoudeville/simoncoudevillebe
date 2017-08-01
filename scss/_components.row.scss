@@ -57,7 +57,10 @@
     //    top: 0;
     //    right: 0;
     //}
-    align-items: flex-start;
+    //align-items: flex-start;
+    display: flex;
+    //align-items: center;
+    //justify-content: center;
 }
 
 .c-row--main {
