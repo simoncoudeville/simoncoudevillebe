@@ -13,6 +13,7 @@
 .c-logo {
     display: inline-flex;
     height: 1rem;
+    //margin-bottom: 0;
     //width: 50px;
     //width: 157px; /* [1] */
     //margin-bottom: 0;
@@ -59,3 +60,18 @@
         display: block;
         @include text-dimensions($alpha-font-size,1,0,1.25,1.25);
     }
+
+
+.c-brand {
+    font-family: $beta-font-family;
+    color: palette(color-neutral,xxxx-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //width: 2rem;
+    //height: 2rem;
+    //border: 1px solid palette(color-neutral,xxxx-light);
+    //background-color: palette(color-neutral,xxxx-light);
+    //color: $html-background-color;
+    //border-radius: 1px;
+}
