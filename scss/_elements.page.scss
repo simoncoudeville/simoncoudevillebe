@@ -34,7 +34,7 @@ $body-selection-text-shadow         : none !default;
 
 html {
     font: $html-font-weight #{$html-font-size/16*100%}/#{$html-line-height} $html-font-family;
-    font-feature-settings:"ss01" 1;
+    //font-feature-settings:"ss01" 1;
     //font-feature-settings:"tnum" 1, "ss01" 1;
     -webkit-overflow-scrolling: touch;
     background-color: $html-background-color;
